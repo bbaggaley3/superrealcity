@@ -130,4 +130,12 @@ footer {
     font-size: 0.8rem;
     font-weight: 300;
   }
+  a{
+    color: $color-grey-05;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+  }
+  a:hover {
+    color: $color-tertiary;
+  }
 }

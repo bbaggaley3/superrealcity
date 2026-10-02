@@ -355,7 +355,7 @@ template {
   transition: background-color 0.3s ease;
 }
 .site-nav a:hover {
-  background-color: #05691a;
+  background-color: #001799;
   color: lab(97% 0 0);
 }
 
@@ -502,6 +502,14 @@ footer p {
   margin: 0.25rem;
   font-size: 0.8rem;
   font-weight: 300;
+}
+footer a {
+  color: lab(98% 0 0);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #9edff0;
 }
 
 /************************** IMPORT VARIABLES **************************/
