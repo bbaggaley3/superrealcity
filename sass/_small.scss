@@ -1,0 +1,114 @@
+/************************** IMPORT VARIABLES **************************/
+@use "variables" as *;
+
+/************************** BORDER BOX **************************/
+* {
+  box-sizing: border-box;
+}
+
+/************************** BODY **************************/
+body {
+  font-family: $font-family;
+  @include reset;
+}
+
+/************************** HEADER **************************/
+header {
+  padding: $gutter 0 $gutter $gutter;
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  column-gap: 8px;
+  align-items: end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+  }
+
+  span {
+    font-size: 2rem;
+    color: $color-grey-80;
+  }
+}
+
+
+/************************** MAIN LAYOUT **************************/
+h1 {
+  font-size: 2rem;
+  color: $color-grey-95;
+  font-weight: $font-weight-heavy;
+  margin-left: $gutter;
+}
+ h2 {
+  font-size: 1.5rem;
+  color: $color-grey-95;
+  font-weight: $font-weight-heavy;
+  margin-left: $gutter;
+ }
+
+h3{
+  font-size: 1.25rem;
+  color: $color-grey-95;
+  font-weight: $font-weight-heavy;
+  margin-left: $gutter;
+}
+
+p{
+  margin-left: $gutter;
+}
+
+ul{
+  margin-left: $gutter;
+  list-style-type: disc;
+
+}
+
+
+
+
+/************************** SOCIAL MEDIA **************************/
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  margin-bottom: 1rem;
+
+  img {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
+  a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: $color-trans-w90;
+    transition: background-color .3s ease-in-out;
+  }
+
+  a:hover {
+    background-color: $color-trans-w70;
+  }
+}
+
+
+/************************** FOOTER **************************/
+footer {
+  background-color: $color-primary;
+  color: $color-grey-05;
+  text-align: center;
+  padding: 1rem 0;
+
+  p {
+    margin: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
