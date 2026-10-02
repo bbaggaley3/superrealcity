@@ -30,10 +30,29 @@ header {
 
   span {
     font-size: 2rem;
-    color: $color-grey-80;
+    color: $color-primary;
   }
 }
 
+/************************** HERO  LAYOUT **************************/
+.hero{
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    background-color: $color-trans-w70;
+    padding: 0.8rem;
+    width: 100%;
+    font-weight: $font-weight-heavy;
+    font-size: clamp(1.5rem, 6vw, 1.8rem);
+
+  }
+}
 
 /************************** MAIN LAYOUT **************************/
 h1 {
