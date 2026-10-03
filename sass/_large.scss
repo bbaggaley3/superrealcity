@@ -20,4 +20,15 @@
         @include img-shadow-1;
     }
 
+/************************** FOOTER Layout **************************/
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        section{
+            display: block;
+        }
+    }
+
 } // end media query

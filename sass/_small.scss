@@ -124,7 +124,10 @@ footer {
   color: $color-grey-05;
   text-align: center;
   padding: 1rem 0;
-
+h3{
+  color: $color-grey-05;
+  font-size: 1rem;
+}
   p {
     margin: 0.25rem;
     font-size: 0.8rem;
@@ -133,9 +136,11 @@ footer {
   a{
     color: $color-grey-05;
     text-decoration: none;
+    font-size: 0.8rem;
     transition: color .3s ease-in-out;
   }
   a:hover {
     color: $color-tertiary;
   }
+
 }

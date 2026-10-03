@@ -498,6 +498,10 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+footer h3 {
+  color: lab(98% 0 0);
+  font-size: 1rem;
+}
 footer p {
   margin: 0.25rem;
   font-size: 0.8rem;
@@ -506,6 +510,7 @@ footer p {
 footer a {
   color: lab(98% 0 0);
   text-decoration: none;
+  font-size: 0.8rem;
   transition: color 0.3s ease-in-out;
 }
 footer a:hover {
@@ -529,5 +534,15 @@ footer a:hover {
     display: block;
     border: solid 1px lab(85% 0 0);
     box-shadow: 1px 1px 6px lab(85% 0 0);
+  }
+  /************************** FOOTER Layout **************************/
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer section {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
