@@ -553,4 +553,41 @@ footer div.logos {
     justify-content: space-between;
     padding: 1rem;
   }
+}
+/************************** IMPORT VARIABLES **************************/
+/************************** CARD STYLES **************************/
+.card-one {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  background-color: lab(97% 0 0);
+  border: 1px solid lab(91% 0 0);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 10px;
+}
+.card-one span {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 10px;
+  font-size: 1.25rem;
+  color: lab(15% 0 0);
+  font-weight: 500;
+}
+.card-one img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-one a {
+  display: block;
+  text-decoration: none;
+  color: lab(8% 0 0);
+  background-color: lab(97% 0 0);
+  padding: 0.5rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 20px;
+}
+.card-one a:hover {
+  background-color: lab(91% 0 0);
 }/*# sourceMappingURL=styles.css.map */
