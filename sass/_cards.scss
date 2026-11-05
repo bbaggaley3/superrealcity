@@ -2,11 +2,11 @@
 @use "variables" as *;
 
 /************************** CARD STYLES **************************/
-.card-one {
+div.card-one {
     font-family: $font-family;
     font-weight: $font-weight-normal;
     background-color: $color-grey-10;
-    border: 1px solid $color-grey-20;
+    border: 1px solid $color-secondary;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem $gutter;
@@ -29,14 +29,15 @@
     a {
         display: block;
         text-decoration: none;
-        color: $color-grey-90;
-        background-color: $color-grey-10;
+        color: $color-grey-10;
+        background-color: $color-secondary;
         padding: .5rem;
         text-align: center;
         margin: 1rem;
         border-radius: 20px;
         &:hover {   
-            background-color: $color-grey-20;
+            background-color: $color-grey-10;
+            color: $color-secondary;
         }
     }
 }
