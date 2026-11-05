@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 /************************** CARD STYLES **************************/
-div.card-one {
+.card-one {
     font-family: $font-family;
     font-weight: $font-weight-normal;
     background-color: $color-grey-10;
