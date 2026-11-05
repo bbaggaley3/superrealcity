@@ -5,7 +5,7 @@
 .card-one {
     font-family: $font-family;
     font-weight: $font-weight-normal;
-    background-color: $color-grey-10;
+    background-color: $color-primary;
     border: 1px solid $color-secondary;
     border-radius: 10px;
     overflow: hidden;
@@ -16,7 +16,7 @@
         text-align: center;
         padding: .75rem $gutter;
         font-size: 1.25rem;
-        color: $color-grey-80;
+        color: $color-grey-10;
         font-weight: $font-weight-heavy;
     }
 
@@ -24,6 +24,7 @@
         width: 100%;
         height: auto;
         display: block;
+        padding: 1rem;
     }
 
     a {

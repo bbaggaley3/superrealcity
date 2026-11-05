@@ -559,7 +559,7 @@ footer div.logos {
 .card-one {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  background-color: lab(97% 0 0);
+  background-color: #05691a;
   border: 1px solid #001799;
   border-radius: 10px;
   overflow: hidden;
@@ -570,13 +570,14 @@ footer div.logos {
   text-align: center;
   padding: 0.75rem 10px;
   font-size: 1.25rem;
-  color: lab(15% 0 0);
+  color: lab(97% 0 0);
   font-weight: 500;
 }
 .card-one img {
   width: 100%;
   height: auto;
   display: block;
+  padding: 1rem;
 }
 .card-one a {
   display: block;
@@ -591,4 +592,21 @@ footer div.logos {
 .card-one a:hover {
   background-color: lab(97% 0 0);
   color: #001799;
+}
+
+/************************** IMPORT VARIABLES **************************/
+/************************** GRID STYLES **************************/
+.grid-1, .grid-2, .grid-3 {
+  display: grid;
+}
+
+@media only screen and (min-width: 500px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=styles.css.map */
