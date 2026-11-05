@@ -527,43 +527,6 @@ footer div.logos {
   gap: 0.5rem;
 }
 
-.card-one {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  background-color: lab(97% 0 0);
-  border: 1px solid #001799;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 1rem 10px;
-}
-.card-one span {
-  display: block;
-  text-align: center;
-  padding: 0.75rem 10px;
-  font-size: 1.25rem;
-  color: lab(15% 0 0);
-  font-weight: 500;
-}
-.card-one img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.card-one a {
-  display: block;
-  text-decoration: none;
-  color: lab(97% 0 0);
-  background-color: #001799;
-  padding: 0.5rem;
-  text-align: center;
-  margin: 1rem;
-  border-radius: 20px;
-}
-.card-one a:hover {
-  background-color: lab(97% 0 0);
-  color: #001799;
-}
-
 /************************** IMPORT VARIABLES **************************/
 @media only screen and (min-width: 46rem) {
   header,
