@@ -465,6 +465,61 @@ ul {
   list-style-type: disc;
 }
 
+main > h1 {
+  font-size: 2rem;
+  color: #001799;
+  font-weight: 500;
+  margin: 1rem 10px 0 10px;
+}
+main > h2 {
+  font-size: 1.6rem;
+  color: lab(3% 0 0);
+  font-weight: 300;
+  margin: 0.75rem 10px 0 10px;
+}
+main > h3 {
+  font-size: 1.25rem;
+  color: lab(15% 0 0);
+  font-weight: 500;
+  margin: 0.5rem 10px 0 10px;
+}
+main > p {
+  font-size: 1rem;
+  color: lab(15% 0 0);
+  margin: 0.1rem 10px;
+  line-height: 150%;
+}
+main > ul {
+  margin: 0;
+}
+main > ul li {
+  font-size: 1rem;
+  color: lab(15% 0 0);
+  line-height: 150%;
+  font-style: italic;
+  padding: 0.3rem 0;
+}
+main > ul li::marker {
+  content: "★";
+  color: lab(27% 0 0);
+  font-size: 1rem;
+  font-style: normal;
+}
+main > img {
+  margin: 1rem 10px;
+  max-width: calc(100% - 20px);
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+main > address {
+  font-style: normal;
+  font-size: 1.5rem;
+  margin: 1rem 10px;
+  padding-left: 5px;
+  border-left: 4px solid #05691a;
+}
+
 /************************** SOCIAL MEDIA **************************/
 .social {
   display: flex;
@@ -535,6 +590,11 @@ footer div.logos {
   footer {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  main > img {
+    width: 50%;
+    float: right;
+    margin-top: 0;
   }
   /************************** Hero Layout **************************/
   .hero {

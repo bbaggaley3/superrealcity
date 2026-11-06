@@ -12,6 +12,13 @@
         margin: 0 auto;
     }
 
+    main {
+        >img {
+            width: 50%;
+            float: right;
+            margin-top: 0;
+        }
+    }
 /************************** Hero Layout **************************/
     .hero {
         border-radius: 12px;
