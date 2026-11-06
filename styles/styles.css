@@ -393,8 +393,8 @@ template {
 }
 
 .current-menu-parent > a {
-  color: lab(97% 0 0);
-  background-color: lab(48% 0 0);
+  color: lab(8% 0 0);
+  background-color: lab(85% 0 0);
 }
 
 .menu-item-has-children ul {
