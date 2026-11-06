@@ -10,7 +10,10 @@
     }
 
     /************************** NAVIGATION **************************/
-
+    nav {
+    position: sticky;
+    top: 0;
+    }
     // Show the nav links no matter what
     .site-nav,
     .site-nav.open {
@@ -24,4 +27,10 @@
         border: none;
     }
 
+    //style the sub menu hover
+    .site-nav li ul {
+        position: absolute;
+        background-color: $color-grey-05;
+        z-index: 1000;
+    }
 } // end media query

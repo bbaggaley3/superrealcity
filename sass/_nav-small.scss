@@ -28,6 +28,11 @@
   font-family: Verdana;
   background-color: $color-grey-05;
   display: none;
+  li ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 
@@ -54,7 +59,42 @@
 
 
 //Style the current menu item
-.active>a {
+.current-menu-item > a {
   color: $color-grey-10;
   background-color: $color-primary;
+}
+// Style the sub-menu items
+.site-nav li ul a {
+  text-transform: capitalize;
+  font-size: .7rem;
+  padding-left: 15px;
+}
+// Style the menu items that have children
+.menu-item-has-children > a{
+  display: grid;
+  grid-template-columns: auto 16px;
+}
+.menu-item-has-children > a::after {
+  content: "\25BC";
+  font-size: .6rem;
+  color: $color-grey-70;
+}
+.menu-item-has-children>a:hover::after {
+  color: $color-grey-10;
+  content: "\25B2";
+  font-size: .6rem;
+}
+
+//style the PARENT menu item of the current menu item
+.current-menu-parent>a {
+  color: $color-grey-10;
+  background-color: $color-grey-50;
+}
+//make the menu interactive
+.menu-item-has-children ul {
+  display: none;
+}
+// Show the sub-menu when the parent menu item is hovered over
+.menu-item-has-children:hover ul {
+  display: block;
 }

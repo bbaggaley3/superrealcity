@@ -339,6 +339,11 @@ template {
   background-color: lab(98% 0 0);
   display: none;
 }
+.site-nav li ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 .site-nav.open {
   display: block;
@@ -359,9 +364,45 @@ template {
   color: lab(97% 0 0);
 }
 
-.active > a {
+.current-menu-item > a {
   color: lab(97% 0 0);
   background-color: #05691a;
+}
+
+.site-nav li ul a {
+  text-transform: capitalize;
+  font-size: 0.7rem;
+  padding-left: 15px;
+}
+
+.menu-item-has-children > a {
+  display: grid;
+  grid-template-columns: auto 16px;
+}
+
+.menu-item-has-children > a::after {
+  content: "▼";
+  font-size: 0.6rem;
+  color: lab(27% 0 0);
+}
+
+.menu-item-has-children > a:hover::after {
+  color: lab(97% 0 0);
+  content: "▲";
+  font-size: 0.6rem;
+}
+
+.current-menu-parent > a {
+  color: lab(97% 0 0);
+  background-color: lab(48% 0 0);
+}
+
+.menu-item-has-children ul {
+  display: none;
+}
+
+.menu-item-has-children:hover ul {
+  display: block;
 }
 
 /************************** IMPORT VARIABLES **************************/
@@ -372,6 +413,10 @@ template {
     display: none;
   }
   /************************** NAVIGATION **************************/
+  nav {
+    position: sticky;
+    top: 0;
+  }
   .site-nav,
   .site-nav.open {
     display: flex;
@@ -380,6 +425,11 @@ template {
   .site-nav li a {
     font-size: 0.7rem;
     border: none;
+  }
+  .site-nav li ul {
+    position: absolute;
+    background-color: lab(98% 0 0);
+    z-index: 1000;
   }
 }
 /************************** IMPORT VARIABLES **************************/
